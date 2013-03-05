@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.RichSomerfield.AlfredTerminal</string>
+	<key>connections</key>
+	<dict>
+		<key>F90F4030-E54D-4C6A-99D4-87392DFC7961</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>07B39575-0A2A-40C4-A689-D24BE61315BB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Rich Somerfield</string>
+	<key>description</key>
+	<string>Opens Terminal at favorite places</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Terminal</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>t/</string>
+				<key>script</key>
+				<string>osascript GetAllTerminalFolders.scpt</string>
+				<key>title</key>
+				<string>Terminal...</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F90F4030-E54D-4C6A-99D4-87392DFC7961</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>script</key>
+				<string>osascript OpeniTermHere.scpt "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.script</string>
+			<key>uid</key>
+			<string>07B39575-0A2A-40C4-A689-D24BE61315BB</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>07B39575-0A2A-40C4-A689-D24BE61315BB</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>F90F4030-E54D-4C6A-99D4-87392DFC7961</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://www.richsomerfield.com</string>
+</dict>
+</plist>
